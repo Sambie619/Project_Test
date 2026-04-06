@@ -50,7 +50,7 @@ public class EmployeeWorkServlet extends HttpServlet {
             EmployeeWork w = new EmployeeWork(empName, city, workDate, deptId, projectId);
             dao.saveWork(w);
 
-            response.sendRedirect("EmployeeWorkServlet?action=report");
+            response.sendRedirect("EmployeeWorkServlet?action=form");
         }
 
         else if(action.equals("report")) {
